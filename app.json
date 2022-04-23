@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "BEBERLINE",
+    "slug": "BEBERLINE",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo_new.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/logo_new.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "The app accesses your photos to let you share them with your friends.",
+        "NSCameraUsageDescription": "Allow $(PRODUCT_NAME) to access your camera",
+        "NSMicrophoneUsageDescription": "Allow $(PRODUCT_NAME) to access your microphone"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo_new.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCHap89hRORn2yckiMEl3qv9uVn9wbTGTc"
+        }
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.beberline"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
+    "description": "CAB_BOOKING",
+    "githubUrl": "https://github.com/NavyNeb/BEBERLINE_APP"
+  }
+}
